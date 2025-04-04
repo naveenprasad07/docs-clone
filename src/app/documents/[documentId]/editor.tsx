@@ -12,6 +12,7 @@ import Image from "@tiptap/extension-image";
 import ImageResize from "tiptap-extension-resize-image";
 import FontFamily from "@tiptap/extension-font-family";
 import { useEditorStore } from "@/store/use-editor-store";
+import TextStyle from "@tiptap/extension-text-style";
 import Underline from "@tiptap/extension-underline";
 
 export const Editor = () => {
@@ -59,6 +60,7 @@ export const Editor = () => {
       Image,
       ImageResize,
       Underline,
+      TextStyle,
     ],
     content: `
      <table>
