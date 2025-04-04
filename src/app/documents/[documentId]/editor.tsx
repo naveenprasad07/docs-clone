@@ -13,7 +13,10 @@ import ImageResize from "tiptap-extension-resize-image";
 import FontFamily from "@tiptap/extension-font-family";
 import { useEditorStore } from "@/store/use-editor-store";
 import TextStyle from "@tiptap/extension-text-style";
+import Link from "@tiptap/extension-link";
 import Underline from "@tiptap/extension-underline";
+import { Color } from "@tiptap/extension-color";
+import Highlight from "@tiptap/extension-highlight";
 
 export const Editor = () => {
   const { setEditor } = useEditorStore();
@@ -48,6 +51,11 @@ export const Editor = () => {
     },
     extensions: [
       StarterKit,
+      Link.configure({
+        autolink: true,
+        openOnClick: false,
+        defaultProtocol: "https",
+      }),
       Table,
       TableCell,
       TableHeader,
@@ -61,6 +69,10 @@ export const Editor = () => {
       ImageResize,
       Underline,
       TextStyle,
+      Color,
+      Highlight.configure({
+        multicolor: true,
+      }),
     ],
     content: `
      <table>
