@@ -17,6 +17,7 @@ import Link from "@tiptap/extension-link";
 import Underline from "@tiptap/extension-underline";
 import { Color } from "@tiptap/extension-color";
 import Highlight from "@tiptap/extension-highlight";
+import TextAlign from "@tiptap/extension-text-align";
 
 export const Editor = () => {
   const { setEditor } = useEditorStore();
@@ -60,6 +61,9 @@ export const Editor = () => {
       TableCell,
       TableHeader,
       FontFamily,
+      TextAlign.configure({
+        types: ["heading", "paragraph"],
+      }),
       TableRow,
       TaskItem.configure({
         nested: true,
