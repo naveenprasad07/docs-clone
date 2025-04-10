@@ -20,7 +20,6 @@ const DocumentIdPage = async ({ params }: DocumentIdPageProps) => {
         <Room>
           <Editor />
         </Room>
-        x
       </div>
     </div>
   );

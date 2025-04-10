@@ -15,6 +15,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Docs",
   description: "Docs is the go to solution for writing documents",
+  icons: {
+    icon: { url: "/logo.svg", type: "image/x-icon" },
+  },
 };
 
 export default function RootLayout({
