@@ -11,7 +11,7 @@ interface DocumentProps {
   preloadedDocument: Preloaded<typeof api.documents.getById>;
 }
 
-export const Document = async ({ preloadedDocument }: DocumentProps) => {
+export const Document = ({ preloadedDocument }: DocumentProps) => {
   const document = usePreloadedQuery(preloadedDocument);
 
   return (
