@@ -534,7 +534,7 @@ const FontFamilyButton = () => {
 
 interface ToolbarButtonProps {
   onClick?: () => void;
-  isActive?: Boolean;
+  isActive?: boolean;
   icon: LucideIcon;
 }
 

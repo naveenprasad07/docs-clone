@@ -16,7 +16,6 @@ import { api } from "../../convex/_generated/api";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { updateById } from "../../convex/documents";
 import { toast } from "sonner";
 interface RenameDialogProps {
   documentId: Id<"documents">;

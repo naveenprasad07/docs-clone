@@ -24,7 +24,7 @@ export const TemplatesGallery = () => {
   const onTemplateClick = async (title: string, initialContent: string) => {
     setIsCreating(true);
     await create({ title, initialContent })
-      .catch((x) => toast.error("Something went Wrong"))
+      .catch(() => toast.error("Something went Wrong"))
       .then((documentId) => {
         toast.success("Template created!!");
         router.push(`/documents/${documentId}`);
@@ -53,7 +53,9 @@ export const TemplatesGallery = () => {
                 >
                   <button
                     disabled={isCreating}
-                    onClick={() => onTemplateClick(template.label, "")}
+                    onClick={() =>
+                      onTemplateClick(template.label, template.initialContent)
+                    }
                     style={{
                       backgroundImage: `url(${template.imageUrl})`,
                       backgroundSize: "cover",
