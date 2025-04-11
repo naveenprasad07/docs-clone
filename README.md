@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Docs Clone
 
-## Getting Started
+A modern collaborative document editor built with cutting-edge tools like **Next.js**, **Convex**, **Clerk**, and **Liveblocks**. Inspired by Google Docs but tailored for teams, organizations, and real-time collaboration.
 
-First, run the development server:
+## 🌍 Live URL
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[👉 Open the app](https://docs-clone-zeta.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ✅ Document Management
+- Create, edit, rename, and delete documents
+- Autosave support with initial content option
+- Document search with instant filtering
+- Title-based full-text search across your documents
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🧑‍💼 Access Control
+- Clerk-powered authentication
+- Organization-based access using Clerk's `organization_id`
+- Only document owners or org members can edit/delete documents
 
-## Learn More
+### 🔍 Search & Pagination
+- Paginated document listings
+- Full-text search via Convex search indexes
+- Smart filtering based on organization or user ownership
 
-To learn more about Next.js, take a look at the following resources:
+### 🧠 Rich Text Editing
+- Built with TipTap and Liveblocks for real-time multi-user editing
+- Supports text styles, headings, links, images, tables, and more
+- Tasks, checklists, and custom extension support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🧑‍🤝‍🧑 Real-Time Collaboration
+- Cursor presence and live edits powered by **Liveblocks**
+- Collaboration cursors with avatars and usernames
+- Shared editing with no conflicts using Y.js & TipTap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🎨 UI/UX
+- Built with Radix UI & TailwindCSS for a polished interface
+- Responsive and accessible layout
+- Theme support via `next-themes`
 
-## Deploy on Vercel
+### 🔧 Dev Stack
+- **Next.js 15**
+- **Convex** (serverless backend & real-time DB)
+- **Clerk** (auth + org management)
+- **Liveblocks** (collaboration infra)
+- **TipTap** (rich text editor)
+- **Zustand** (state management)
+- **Radix UI** + **Tailwind CSS** (design system)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Built with ❤️ by [Naveen Prasad]
